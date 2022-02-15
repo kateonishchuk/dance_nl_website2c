@@ -11,7 +11,11 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/home.css">
     <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/image_zoom.css">
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/gallery.css">
+    <!-- jquery scripts file link --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 <!-- header section starts  -->
@@ -1793,6 +1797,35 @@
     </div>
   </section>
 <!-- category filter ends -->
+
+<!-- pagination starts -->
+<div class="pagination pag">
+  <div class="bg-color">
+    <nav class="pag-nav" aria-label="Page navigation example">
+      <ul class="pag-menu pagination justify-content-end">
+        <li class="page-item disabled">
+          <a class="page-link" id="prev-l" href="#">Назад</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="https://kateonishchuk.github.io/dance_nl_website2/">1</a></li>
+        <li class="page-item"><a class="page-link" href="https://kateonishchuk.github.io/dance_nl_website2a/">2</a></li>
+        <li class="page-item"><a class="page-link" href="https://kateonishchuk.github.io/dance_nl_website2b/">3</a></li>
+        <li class="page-item"><a class="page-link active-p" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="#">8</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item"><a class="page-link" href="#">10</a></li>
+        <li class="page-item">
+          <a class="page-link" id="next-l" href="#">Вперед</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- pagination ends -->
+</div>
+
+<!-- image zoom script -->
+<script src="js/image_zoom.js"></script>
 <!-- gallery scripts -->
 <script src="js/gallery.js"></script>
 </body>
