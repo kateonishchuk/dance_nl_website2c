@@ -1,51 +1,83 @@
-:root{
+:root {
     --Inter: 'Inter', sans-serif;
     --Kaushan: 'Kaushan Script', cursive;
     --Mont: 'Montserrat', sans-serif;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     line-height: 1.5;
     font-family: var(--Mont);
-    background-color: #91ccae;
     color: #fff;
 }
-.menu{
+
+.page {
+    background-color: #cf1932;
+}
+
+.menu {
     margin: 2rem 0;
 }
-.menu-container{
+
+.menu-wrapper {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1rem;
 }
-img{
+
+.header-top a {
+    text-decoration: none;
+}
+
+
+.header-top a span {
+    color: #fff;
+    font-weight: 700;
+}
+
+.menu-wrap h2,
+.menu-wrap p {
+    color: #fff;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+img {
     width: 100%;
     display: block;
 }
-.menu-head{
+
+.menu-wrap {
     text-align: center;
 }
-.menu-head h2{
+
+.menu-wrap h2 {
     font-family: var(--Kaushan);
     font-size: 2.6rem;
 }
-.menu-head p{
+
+.menu-wrap p {
     font-weight: 300;
     padding: 1.8rem 0;
 }
-.menu-btns{
+
+.menu-btns {
     padding: 0.6rem 0;
     display: flex;
     justify-content: center;
 }
+
 .menu-btn{
     font-family: var(--Inter);
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.75rem;
     font-weight: 600;
     background: none;
     border: none;
@@ -56,7 +88,8 @@ img{
     outline: 0;
     transition: opacity 0.4s ease-out;
 }
-.menu-btn::after{
+
+.menu-btn::after {
     content: "";
     display: block;
     height: 2px;
@@ -67,19 +100,59 @@ img{
     width: 0;
     transition: width 0.4s ease-out;
 }
-.menu-btn:hover::after{
+
+.menu-btn:hover::after {
     width: 100%;
 }
-.menu-btn:hover{
+
+.menu-btn:hover {
     opacity: 0.8;
 }
-.active-btn{
-    color: #fff;
+
+.pag-nav {
+    margin: 1rem 3.5rem;
 }
-.food-items{
+
+.pag {
+    width: 50rem;
+}
+
+.page-link {
+    font-size: 20px;
+    font-weight: 600;
+    width: 10rem;
+}
+
+.logo i {
+    background-color: #fff;
+}
+
+.page-item a {
+    text-align: center;
+}
+
+.page-item a:hover {
+    color: #e7880a;
+    background-color: #a3a09b;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.fas, .fab {
+    text-decoration: none;
+}
+
+.active-btn {
+    color: #e7880a;
+}
+
+.wardrobe-items {
     margin: 2rem 0;
 }
-.food-item{
+
+.wardrobe-item {
     border-radius: 4px;
     overflow: hidden;
     background: #fff;
@@ -89,81 +162,124 @@ img{
     /* display: ; */
     animation: fadeIn 2s;
 }
-@keyframes fadeIn{
-    from{
+
+@keyframes fadeIn {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
-.food-img img{
+
+.wardrobe-img img {
     border-radius: 4px;
+    max-width: 250px;
+    max-height: 200px;
 }
-.food-content{
+
+.wardrobe-content {
     padding: 1rem;
 }
-.food-name{
+
+.wardrobe-name {
     font-family: var(--Inter);
     color: #ff9505;
     font-weight: 500;
+    font-size: 2.5rem;
     text-transform: capitalize;
 }
-.line{
+
+.line {
     width: 100px;
     height: 3px;
     background: #ff9505;
 }
-.food-price{
+
+.wardrobe-price {
     padding: 0.4rem 0;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 2rem;
     opacity: 0.8;
 }
-.rating{
+
+.wardrobe-rating {
     display: flex;
     list-style: none;
 }
-.rating .fa-star{
+
+.wardrobe-rating .fa-star {
     margin-right: 0.4rem;
     color: #44355b;
 }
-.category{
+
+.fa-star {
+    font-size: 1.5rem;
+}
+
+.category {
     padding-top: 0.2rem;
-    font-size: 1rem;
+    font-size: 1.75rem;
     font-weight: 800;
     font-family: var(--Inter);
 }
-.category span{
+
+.menu-text {
+    font-size: 4.75rem;
+}
+
+.menu-info {
+    font-size: 2.25rem;
+}
+
+.wardrobe-category {
+    font-size: 1.5rem;
+}
+
+.category span {
     font-weight: 500;
 }
 
+#prev-l {
+    font-size: 2rem;
+}
+
+#next-l {
+    font-size: 2rem;
+}
+
 @media screen and (min-width: 600px){
-    .food-item{
+
+    .wardrobe-item {
         display: grid;
         grid-template-columns: 25% auto;
         align-items: center;
         padding: 1rem;
         column-gap: 1rem;
     }
-    .food-content{
+
+    .wardrobe-content {
         padding: 0;
     }
 }
 
-@media screen and (min-width: 768px){
-    .menu-head p{
+@media screen and (min-width: 768px) {
+
+    .menu-wrap p {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
-@media screen and (min-width: 992px){
-    .menu-head p{
+@media screen and (min-width: 992px) {
+
+    .menu-wrap p {
         width: 50%;
     }
-    .food-items{
+    
+    .wardrobe-items {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
