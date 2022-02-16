@@ -1,7 +1,7 @@
 const menuBtns = document.querySelectorAll('.menu-btn');
-const foodItems = document.querySelectorAll('.food-item');
+const foodItems = document.querySelectorAll('.wardrobe-item');
 
-let activeBtn = "featured";
+let activeBtn = "ballerina-shoes";
 
 showFoodMenu(activeBtn);
 
